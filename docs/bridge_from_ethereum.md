@@ -21,10 +21,13 @@ To bridge assets from Ethereum to HydraDX, follow the steps below.
 1. Navigate to the [Carrier UI](https://www.carrier.so/)
 2. As Destination, select `HydraDX`
 3. Connect your Ethereum wallet
-4. Connect your HydraDX wallet
+4. Connect your HydraDX wallet*
 5. Select the asset you wish to bridge and the amount
 6. Click on `Settings` and turn on `Auto Relay`
 7. Confirm and sign the transaction
+
+*If you have any issues with the transaction stopping at Step 4 of 5 on carrier you may need to manualy redeem the bridged assets via Moonbeam (with a small fee using the 'GLMR' token). 
+Check the carrier.so url for the trasaction it will look like: https://www.carrier.so/progress/2/[Transaction Hash]?isUsingRelayer=true and change the end of the webpage url to https://www.carrier.so/progress/2/[Transaction Hash]?enableManualRedemption=true – you can then connect the source wallet you used (e.g. MetaMask) to pay the GLMR fee to redeem it and it will then automatically show up on the hdx destination wallet.*
 
 Once finalized, the assets will appear in your HydraDX wallet.
 
